@@ -1,0 +1,43 @@
+
+var body = input['Notification Information'];     
+
+tmp = body.match( /Notification: (.*)/);             # When the code founds "Notification" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. Notification = tmp[1];
+    
+tmp = body.match( /Situation: (.*)/);                # When the code founds "Situation" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. situation = tmp[1];
+    
+tmp = body.match( /Application Affected: (.*)/);     # When the code founds "Affected Application" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. app = tmp[1];
+
+tmp = body.match( /Users Affected: (.*)/);           # When the code founds "User Affected" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output.user = tmp[1];
+    
+tmp = body.match( /Alternatives: (.*)/);             # When the code founds "Alternatives" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. alt = tmp[1];
+
+tmp = body.match( /Department Resolving: (.*)/);     # When the code founds "Department Resolving" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. dr = tmp[1];
+
+tmp = body.match( /Department Manager: (.*)/);       # When the code founds "Deaprtment Manager" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. dm = tmp[1];
+    
+tmp = body.match( /Sent by: (.*)/);                  # When the code founds "Sent By" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. sent = tmp[1];
+    
+tmp = body.match( /Time to resolve: (.*)/);          # When the code founds "Time to resolve" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. time = tmp[1];
+    
+tmp = body.match( /Action being taken: (.*)/);       # When the code founds "Action being taken" in the alerting profile, it copies the whole body information till the next property.
+    if (tmp && tmp.length > 0)
+        output. action = tmp[1];
+        
