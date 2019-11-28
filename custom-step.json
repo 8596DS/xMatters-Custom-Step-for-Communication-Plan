@@ -1,3 +1,5 @@
+$ npm install write-json-file
+
 
 var body = input['Notification-Information'];     
 
