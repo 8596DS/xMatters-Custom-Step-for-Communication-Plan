@@ -1,5 +1,5 @@
 
-var body = input['Notification Information'];     
+var body = input['Notification-Information'];     
 
 tmp = body.match( /Notification: (.*)/);             # When the code founds "Notification" in the alerting profile, it copies the whole body information till the next property.
     if (tmp && tmp.length > 0)
